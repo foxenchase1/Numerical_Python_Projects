@@ -31,8 +31,6 @@ def kepler_eqn(ecc, M, n):
 E_vals = kepler_eqn(ecc, M, n)
 E_vals1 = np.round(E_vals[0]*180/np.pi,7)
 errs = np.append([0],E_vals[1])
-#for i in range(1, len(E_vals)-1):
- #   E_vals1[i] = E_vals1[i]*180*(1/np.pi)
 
 # Organize data for display
 data_out = np.array([E_vals1, errs])
