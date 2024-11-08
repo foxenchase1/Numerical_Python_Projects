@@ -8,7 +8,7 @@ Created on Fri Nov  8 15:15:06 2024
 import numpy as np
 import pandas as pd
 
-x0 = float(input("Specify an initial x between -pi/2 and pi/2: "))
+x0 = float(input("Specify an initial x: "))
 n = int(input("Specify number of iterations: "))+1
 
 def cosine_fixed_point(x0, n):
