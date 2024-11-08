@@ -41,30 +41,3 @@ df = pd.DataFrame(data = data_out, index = index_values, columns= column_values,
 # Display E values
 print("Kepler's Method Results: ")
 print(df)
-
-
-# Newton's Method for Kepler's Equation
-
-#def kepler_eqn_newton(ecc, M, n):
-#    E_N = np.empty(n)
-#    E_N[0] = M
-#    errs_N = np.empty(n-1)
-#    for k in range(0, n-1):
-#        E_N[k+1] = E_N[k]-(E_N[k]-ecc*np.sin(E_N[k])-M)/(1-ecc*np.cos(E_N[k]))
-#        errs_N[k] = abs(E_N[k+1]-E_N[k])
-#    return E_N, errs_N
-
-# Run function and assign variables to tuple from function
-#E_Newton = kepler_eqn_newton(ecc, M, n)
-#E_N1 = E_Newton[0]
-#errs_N1 = E_Newton[1]
-
-# Display E_N values
-#print("Newton's Method for Kepler's Equation Results:")
-#print(E_N1)
-#print(errs_N1)
-
-# Compare methods
-#rel_err = abs(errs-errs_N1)
-#print("Relative error between the two methods: ")
-#print(rel_err)
