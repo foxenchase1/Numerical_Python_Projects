@@ -9,7 +9,7 @@ import pandas as pd
 # Establish parameters 
 M = float(input("Provide M [deg]: "))
 ecc = float(input("Provide eccentricity 'e': "))
-n = int(input("Provide number of iterations: "))
+n = int(input("Provide number of iterations: "))+1
 
 # Initial guess for E is M
 E0 = M*np.pi/180 # here we convert the input M in degrees to radians
